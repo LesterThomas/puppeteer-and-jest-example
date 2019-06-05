@@ -1,8 +1,10 @@
+//helper function to escape string
 const escapeXpathString = str => {
   const splitedQuotes = str.replace(/'/g, `', "'", '`);
   return `concat('${splitedQuotes}', '')`;
 };
 
+//helper function to click on a link based on its text contents
 const clickByText = async (page, text) => {
   const escapedText = escapeXpathString(text);
   const linkHandlers = await page.$x(`//a[contains(text(), ${escapedText})]`);
@@ -19,6 +21,7 @@ describe('Product Recall', () => {
     await page.goto('http://product-recall.s3-website.eu-west-2.amazonaws.com');
   });
 
+  // test drilling down into a product
   it('Should display "Vodafone Retail Management platform" text on page', async () => {
     await expect(page).toMatch('Vodafone Retail Management platform');
   });
@@ -69,7 +72,6 @@ describe('Product Recall', () => {
   it('Should display "Item Management" ', async () => {
     await expect(page).toMatch('Item Management');
   });
-
 
   it('Click on About  menu', async () => {
     await clickByText(page, 'About');
