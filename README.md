@@ -4,6 +4,9 @@
 
 This repo consists of a number of example files using Puppeteer by itself and Jest and Puppeteer together to demonstrate how it can be used for user simulation and automated end-to-end testing.
 
+For helt & training, I suggest you follow course https://egghead.io/courses/end-to-end-testing-with-google-s-puppeteer-and-jest
+
+
 ## Running These Test Files
 
 After first downloading the repo, run an install to get all the dependencies pulled in.

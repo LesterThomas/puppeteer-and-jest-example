@@ -44,12 +44,13 @@ describe('Product Recall', () => {
     await expect(page).toMatch('Product Instances');
   });
  
-  //test all the menus
+  //test all the menus, taking a screenshot image of each page
   it('Click on Home menu', async () => {
     await clickByText(page, `Home`);
   });
   it('Should display "Vodafone Retail Management platform" ', async () => {
     await expect(page).toMatch('Vodafone Retail Management platform');
+    await page.screenshot({path: 'tests/home.png'});
   });
 
   it('Click on Products menu', async () => {
@@ -57,6 +58,7 @@ describe('Product Recall', () => {
   });
   it('Should display "Products" ', async () => {
     await expect(page).toMatch('Products');
+    await page.screenshot({path: 'tests/products.png'});
   });
 
   it('Click on Settings menu', async () => {
@@ -64,6 +66,7 @@ describe('Product Recall', () => {
   });
   it('Should display "Settings" ', async () => {
     await expect(page).toMatch('Settings');
+    await page.screenshot({path: 'tests/settings.png'});
   });
 
   it('Click on Management menu', async () => {
@@ -71,6 +74,7 @@ describe('Product Recall', () => {
   });
   it('Should display "Item Management" ', async () => {
     await expect(page).toMatch('Item Management');
+    await page.screenshot({path: 'tests/management.png'});
   });
 
   it('Click on About  menu', async () => {
@@ -78,6 +82,7 @@ describe('Product Recall', () => {
   });
   it('Should display "About - Vodafone Retail Management platform" ', async () => {
     await expect(page).toMatch('About - Vodafone Retail Management platform');
+    await page.screenshot({path: 'tests/about.png'});
   });
 
 

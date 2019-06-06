@@ -1,0 +1,27 @@
+PASS ./productrecall-skim.test.js (14.938s)
+  Product Recall
+    √ Should display "Vodafone Retail Management platform" text on page (58ms)
+    √ Press View Products button (197ms)
+    √ Should display Products (92ms)
+    √ Should display table with heading Brand (47ms)
+    √ Click on test product (103ms)
+    √ Should display Manage Product table  (87ms)
+    √ Should display Product Instances table  (44ms)
+    √ Click on Home menu (128ms)
+    √ Should display "Vodafone Retail Management platform"  (438ms)
+    √ Click on Products menu (94ms)
+    √ Should display "Products"  (428ms)
+    √ Click on Settings menu (109ms)
+    √ Should display "Settings"  (464ms)
+    √ Click on Management menu (105ms)
+    √ Should display "Item Management"  (501ms)
+    √ Click on About  menu (131ms)
+    √ Should display "About - Vodafone Retail Management platform"  (666ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       17 passed, 17 total
+Snapshots:   0 total
+Time:        15.828s, estimated 20s
+Ran all test suites.
+ERROR: The process with PID 21620 (child process of PID 9060) could not be terminated.
+Reason: There is no running instance of the task.
